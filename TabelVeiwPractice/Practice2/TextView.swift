@@ -8,13 +8,16 @@
 import UIKit
 
 class TextView: UIView {
+    
     @IBOutlet private var lblTxt: UILabel!
     @IBOutlet private var lblTitle: UILabel!
+    
     
     class func creatView() -> TextView {
         let temView : TextView = Bundle.main.loadNibNamed("SecoundView", owner: self, options: nil)?.first as! TextView
         return temView
     }
+    
     
     public func changeTitle() {
         self.lblTitle.text = "right"
